@@ -8,6 +8,12 @@ pipeline {
                 }
             }
         }
-    
+     stage("code build"){
+            steps {
+                script {
+                  sh "echo bye all"   
+                }
+            }
+        }
      }
 }
