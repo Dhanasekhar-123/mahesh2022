@@ -1,19 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage("jenkins pac"){
+        stage("working with variables"){
             steps {
                 script {
-                  sh "echo hi all"   
+                  var1= 20
+                    println "my var1 value is ${var1}"
                 }
             }
         }
-     stage("code build"){
-            steps {
-                script {
-                  sh "echo bye all"   
-                }
-            }
-        }
+     
      }
 }
